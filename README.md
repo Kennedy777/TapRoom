@@ -2,7 +2,7 @@
 
 ### by Marguerite Kennedy
 
-A simple bar supply management app with (separate) functionality for both bar patrons and managers. First part of a two-week independent projet using skills learned in React module of course. 
+A simple bar supply management app with (separate) functionality for both bar patrons and managers. First part of a two-week independent projet using skills learned in React module of course.
 
 ## App Objectives
 
@@ -15,7 +15,7 @@ _Bartender/Manager Functionality_
 
 * Have "admin" capability to track and manage sales
 * Form for adding a newly tapped keg
-* Option to edit a keg's properties 
+* Option to edit a keg's properties
 * "Sell pint" button--simple mechanism to decrease number of pints remaining when one is sold
 * Kegs with less than 10 pints left are highlighted.
 
@@ -25,9 +25,9 @@ _All users_
 
 ## Setup Instructions
 
-Clone the repository: 
+Clone the repository:
 ```
-$ git clone 
+$ git clone https://github.com/Kennedy777/TapRoom
 ```
 
 Install NPM packages.
@@ -35,4 +35,4 @@ Install NPM packages.
 $ npm install
 ```
 
-## MIT Licence 
+## MIT Licence
