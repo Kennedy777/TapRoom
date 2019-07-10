@@ -1,5 +1,5 @@
 const webpack = require('webpack');
-const { resolve } = require('path
+const { resolve } = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -12,7 +12,7 @@ module.exports = {
 
     output: {
         filename: 'app.bundle.js',
-        path: resolve(__dirname, 'build
+        path: resolve(__dirname, 'build),
         publicPath: '/'
     },
 
