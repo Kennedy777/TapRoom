@@ -7,8 +7,6 @@ function KegList(props) {
     <div>
       <style jsx>{`
         .kegcontainer{
-          display: flex;
-          flex-wrap: wrap;
           justify-content: center;
         }
     `}</style>
