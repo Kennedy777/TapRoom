@@ -20,7 +20,7 @@ _Bartender/Manager Functionality_
 * Kegs with less than 10 pints left are highlighted.
 
 _All users_
-* How many pints are left in a keg. Full: 124 pints.
+* Can see many pints left in a keg (124 pints when full).
 
 
 ## Setup Instructions
