@@ -21,7 +21,7 @@ function Error(props){
           font-weight: bold;
         }
       `}</style>
-    <h2>D'oh! {props.location.pathname} not found </h2>
+      <h2>D'oh! {props.location.pathname} not found </h2>
       <p>Return <Link to="/">home</Link></p>
     </div>
   );
