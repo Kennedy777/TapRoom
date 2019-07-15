@@ -23,6 +23,13 @@ _Bartender/Manager Functionality_
 _All users_
 * Can see many pints left in a keg (124 pints when full).
 
+## Component Trees
+
+Component tree for the first phase of the project: 
+https://github.com/Kennedy777/TapRoom/blob/master/src/assets/Component%20Tree%20Phase%201.JP
+
+Revised component tree; YELLOW indicates state changes: 
+https://github.com/Kennedy777/TapRoom/blob/master/src/assets/ComponentTreePhase2.jpg
 
 ## Setup Instructions
 

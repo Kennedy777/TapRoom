@@ -1,18 +1,27 @@
 import React from 'react'; 
+import ginger-and-fred from '../assets/ginger-and-fred.jpeg';
 
 function Body() {
   return (
     <div>
       <style jsx>{`
-               h1{
-                color: "green"; 
-                display: flex; 
-             `}</style>
-      <div className="main" style={backImg}>
+      
+        .ginger-and-fred {
+           height: 75vh;
+           color: #fff;
+           background-size: cover;
+           display: flex;
+           align-items: center;
+           flex-direction: column;
+      }
+       `}</style>
+      <div> 
+      <div className="main" style={ginger-and-fredImg}>
         <h2>Tap Dance Brewery</h2>
         <div className="about">
         </div>
       </div>
+    </div>
     </div>
   );
 } 
