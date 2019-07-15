@@ -1,6 +1,7 @@
 # Tap Dance
 
 ### by Marguerite Kennedy
+#### July 5 (phase 1) and July 13 (phase 2), 2019
 
 A simple bar supply management app with (separate) functionality for both bar patrons and managers. First part of a two-week independent projet using skills learned in React module of course.
 
@@ -8,7 +9,7 @@ A simple bar supply management app with (separate) functionality for both bar pa
 
 _Patron/Client Functionality_
 * Can see a list of all beers currently offered by the brewery
-* Beer descriptors include type, brand, price, and ABV (alcohol by      volume)
+* Beer descriptors include type, brand, price, and ABV (alcohol by volume)
 * Real-time updates as availability changes (i.e., if a beer is out of stock)
 
 _Bartender/Manager Functionality_
