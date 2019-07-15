@@ -1,6 +1,10 @@
 import React from 'react'; 
 import ginger-and-fred from '../assets/ginger-and-fred.jpeg';
 
+const dancerImg = {
+  backgroundImage: `url(${ginger-and-fred})`
+};
+
 function Body() {
   return (
     <div>
