@@ -13,7 +13,7 @@ module.exports = {
 
     output: {
         filename: 'app.bundle.js',
-        path: resolve(__dirname, 'build),
+        path: resolve(__dirname, 'build'),
         publicPath: '/'
     },
 
@@ -42,7 +42,7 @@ module.exports = {
                 "react",
               ],
               plugins: [
-                "react-hot-loader/babel"
+                "react-hot-loader/babel",
                 "styled-jsx/babel"
               ]
             }
