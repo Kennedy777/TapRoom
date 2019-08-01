@@ -1,4 +1,4 @@
-import React form "react";
+import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiTheme';
 
@@ -12,7 +12,9 @@ import EditKeg from './KegList/EditKeg';
 import SellPint from './Keglist/SellPint';
 import NewKegControl from './AddKeg/NewKegControl';
 import Admin from './Admin';
-import RenderToLayer from 'material-ui/internal/RenderToLayer';
+
+import duff from '..assets/duff.jpeg';
+import gbeer from '../assets/gbeer.jpeg';
 
 class App extends React.Component {
 
@@ -25,15 +27,15 @@ class App extends React.Component {
           brand: 'Tap Dance Brewing',
           price: '7',
           ABV: '5',
-          image: duff,
+          image: gbeer,
           key: '1'
         },
-    
+        {    
           name: 'Moe Betta Blues',
           brand: 'Duff Brewing',
           price: '5',
           ABV: '10',
-          image: MoeB
+          image: duff,
           key: '2'
         }
       ],
@@ -42,7 +44,11 @@ class App extends React.Component {
     this.handleAddingNewKegToList = this.handleAddingNewKegToList.bind(this);
     this.handleChangingSelectedKeg = this.handleChangingSelectedKeg.bind(this);
   }
-  
+    handleAddingNewKegToList(newKeg){
+    let newMasterKegList = this.state.masterKegList.slice();
+    newMasterKegList.push(newKeg);
+    this.setState({masterKegList: newMasterKegList});
+  }
     handleChangingSelectedKeg(keg){
       this.ListeningStateChangedEvent({selectedKeg: keg});
       let newMasterKegList = this.state.masterKegList.slice();
@@ -69,7 +75,7 @@ class App extends React.Component {
           <Route exact path="/editkeg" component={EditKeg} />>
           <Route path="/newkeg" render={() => <NewKegControl onNewKegCreation={this.state.masterKegList}/>} />
           <Route exact path="/sellpint" component={SellPint} />>
-          <Route path="/admin" render={(props) => Admin kegList= {this.state.masterKeglist} currentRouterPath={props.location.pathname} onKegSelection={this.handleChangingSelectedKeg} selectedKeg={this.state.selectedKeg}/>} /> 
+          <Route path="/admin" render={(props) => Admin kegList= {this.state.masterKegList} currentRouterPath={props.location.pathname} onKegSelection={this.handleChangingSelectedKeg} selectedKeg={this.state.selectedKeg}/>} /> 
           <Route component ={Error} />>
           
         </Switch>
@@ -78,5 +84,5 @@ class App extends React.Component {
       </MuiThemeProvider>
     );
   }
-
+}
  export default App;
