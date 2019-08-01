@@ -3,7 +3,7 @@ import React from 'react';
 function SellPint() {
   return (
     <div>
-      <h1 className="subtitle">Pints Sold</h1>
+      <h1 className="subtitle">Sell a pint!</h1>
     </div>
   );
 }

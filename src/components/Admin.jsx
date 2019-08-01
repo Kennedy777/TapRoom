@@ -2,12 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import KegList from './KegList/KegList';
 
+import RaisedButton from 'material-ui/RaisedButton';
+
 function Admin(props){
   return (
     <div>
-      <h2 className="subtitle">Keg Management</h2>
-      <button className="subtitle" href="#/newkeg" label="Add new keg" primary={true} />
-      <KegList kegList={props.kegList} currentRouterPath={props.currentRouterPath} onKegSelection={props.onKegSelection} />
+      <h2 className="subtitle">Admin Portal</h2>
+      <RaisedButton className="subtitle" href="#/newkeg" label="Add keg" primary={true} />
+      <KegList kegList={props.kegList} currentRouterPath={props.currentRouterPath} onKegSelection={props.onKegSelection}/>
     </div>
   );
 }

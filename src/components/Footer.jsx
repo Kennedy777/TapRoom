@@ -1,7 +1,7 @@
 import React from 'react';
 
 const footer = {
-  color: 'green',
+  color: 'gray',
   fontWeight: 'bold'
 };
 

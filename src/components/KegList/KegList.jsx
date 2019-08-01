@@ -7,16 +7,18 @@ function KegList(props) {
     <div>
       <style jsx>{`
         .kegcontainer{
+          display: flex;
+          flex-wrap: wrap;
           justify-content: center;
         }
     `}</style>
-      <h1 className="subtitle">Beers on Tap</h1>
+      <h1 className="subtitle">Our kegs</h1>
       <div className="kegcontainer">
         {props.kegList.map((keg) =>
           <Keg name={keg.name}
             brand={keg.brand}
             price={keg.price}
-            aBV={keg.aBV}
+            alcoholContent={keg.alcoholContent}
             image = {keg.image}
             currentRouterPath={props.currentRouterPath}
             key={keg.id}

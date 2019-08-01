@@ -1,21 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import RaisedButton from 'material-ui/RaisedButton';
+
+const style = {
+  margin: 5,
+};
 
 function Keg(props) {
-  const showKeg =
-  <div>
-  <style jsx>{`
+  const kegDisplay =
+    <div>
+      <style jsx>{`
         .keg {
           border: 1px solid #000;
           text-align: center;
-          width: 500px;
-          height: 500px;
+          width: 400px;
+          height: 400px;
           background-color: #fff;
-          margin: 10px;
+          margin: 15px;
         }
         .kegimg {
           overflow: hidden;
-          height: 70%;
+          height: 60%;
         }
         .kegimg img{
           width: 100%;
@@ -44,9 +49,9 @@ function Keg(props) {
   if (props.currentRouterPath === '/admin'){
     return (
       <div className="keg-header">
-        <button href="#/editkeg" style={style} label="Edit" />
-        <button href="#/sellpint" style={style} label="Sell Pint" />
-        <button onClick={() => {props.onKegSelection({name: props.name, brand: props.brand, price: props.price, alcoholContent: props.alcoholContent, image: props.image});}} style={style} label="Delete (X)" />
+        <RaisedButton href="#/editkeg" style={style} label="Edit" />
+        <RaisedButton href="#/sellpint" style={style} label="Sell Pint" />
+        <RaisedButton onClick={() => {props.onKegSelection({name: props.name, brand: props.brand, price: props.price, alcoholContent: props.alcoholContent, image: props.image});}} style={style} label="Delete (X)" />
         {kegDisplay}
       </div>
     );
@@ -58,11 +63,12 @@ function Keg(props) {
     );
   }
 }
+
 Keg.propTypes = {
   name: PropTypes.string,
   brand: PropTypes.string,
   price: PropTypes.string,
-  aBV: PropTypes.string,
+  alcoholContent: PropTypes.string,
   image: PropTypes.string,
   currentRouterPath: PropTypes.string,
   onKegSelection: PropTypes.func

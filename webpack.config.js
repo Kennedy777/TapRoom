@@ -20,7 +20,7 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx']
   },
-  
+
   devtool: '#source-map',
 
  devServer: {
@@ -77,4 +77,5 @@ module.exports = {
        filename: resolve(__dirname, "build", "index.html"),
         }),
     ]
+
 };
