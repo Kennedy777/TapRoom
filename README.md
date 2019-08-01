@@ -3,7 +3,7 @@
 ### by Marguerite Kennedy
 #### July 5 (phase 1) and July 13 (phase 2), 2019
 
-A simple bar supply management app with (separate) functionality for both bar patrons and managers. First part of a two-week independent projet using skills learned in React module of course.
+A simple bar supply management app with (separate) functionality for both bar patrons and managers. First part of a two-week independent project using React skills.
 
 ## App Objectives
 
