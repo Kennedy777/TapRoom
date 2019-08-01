@@ -1,9 +1,11 @@
-# Tap Dance
+# Tap Dance 
+
+## A Brewery Management App
 
 ### by Marguerite Kennedy
 #### July 5 (phase 1) and July 13 (phase 2), 2019
 
-A simple bar supply management app with (separate) functionality for both bar patrons and managers. First part of a two-week independent project using React skills.
+A simple bar supply management app for a fictional tap room & brewery, with (separate) functionality for both bar patrons and managers. Created for Epicodus independent project using React skills.
 
 ## App Objectives
 
@@ -18,7 +20,6 @@ _Bartender/Manager Functionality_
 * Form for adding a newly tapped keg
 * Option to edit a keg's properties
 * "Sell pint" button--simple mechanism to decrease number of pints remaining when one is sold
-* Kegs with less than 10 pints left are highlighted.
 
 _All users_
 * Can see many pints left in a keg (124 pints when full).
